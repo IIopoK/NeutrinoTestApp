@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kirill.neutrinotestapp.RegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLogin"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:hint="@string/str_et_login"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPassword"
+            android:inputType="textPassword"
+            android:layout_below="@+id/etLogin"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/etLogin"
+            android:layout_alignRight="@+id/etLogin"
+            android:hint="@string/str_et_password"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etVerifyPassword"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:layout_below="@+id/etPassword"
+            android:layout_alignLeft="@+id/etLogin"
+            android:layout_alignRight="@+id/etLogin"
+            android:hint="@string/str_verify_password"
+            android:singleLine="true"
+            android:imeOptions="actionDone"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_registration"
+            android:id="@+id/btnRegistration"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/etLogin"
+            android:layout_alignRight="@+id/etLogin"
+            android:layout_below="@+id/etVerifyPassword" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

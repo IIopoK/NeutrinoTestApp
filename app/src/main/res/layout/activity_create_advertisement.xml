@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kirill.neutrinotestapp.CreateAdvertisementActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAdvertisementName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/str_advertisement_name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAdvertisementDescription"
+        android:hint="@string/str_advertisement_description"
+        android:layout_below="@+id/etAdvertisementName"
+        android:layout_margin="10dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ivAdvertisementImage"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_report_image"
+        android:layout_below="@+id/etAdvertisementDescription"
+        android:layout_above="@+id/btnPost"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_post"
+        android:id="@+id/btnPost"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp" />
+</RelativeLayout>
